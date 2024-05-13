@@ -4,7 +4,7 @@ from SauceDemoPages.LoginPage import LoginPage
 import configparser
 
 config = configparser.ConfigParser()
-config.read(r'C:\Users\vishal_bidikar\PycharmProjects\pythonProject3\CommonBase\config.properties')
+config.read(r'..\CommonBase\config.properties')
 
 
 @pytest.fixture
