@@ -10,8 +10,9 @@ class LoginPage:
         self.Username_Text_Field_Name = "user-name"
         self.Password_Text_Field_Name = "password"
         self.Login_Button = "login-button"
-        self.Burger_Menu="react-burger-menu-btn"
-        self.Logout_Button="logout_sidebar_link"
+        self.Burger_Menu = "react-burger-menu-btn"
+        self.Logout_Button = "logout_sidebar_link"
+
     def username_input(self, username):
         self.driver.find_element(By.ID, self.Username_Text_Field_Name).send_keys(username)
 
@@ -27,6 +28,7 @@ class LoginPage:
 
         Burger_Menu.click()
         Logout_Button.click()
+
     def login_test(self):
         y = Commonbase.Commonbase()
         data = y.read_excel()
@@ -36,7 +38,6 @@ class LoginPage:
             user_name = self.driver.find_element(By.ID, self.Username_Text_Field_Name)
             password = self.driver.find_element(By.ID, self.Password_Text_Field_Name)
             login_btn = self.driver.find_element(By.ID, self.Login_Button)
-
 
             u_value = data.iloc[index, 1]
             user_name.clear()

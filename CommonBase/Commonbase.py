@@ -8,7 +8,7 @@ class Commonbase:
     def __init__(self):
         self.driver = None
         self.filepath = None
-        self.sheet_name=None
+        self.sheet_name = None
 
     def read_excel(self):
         df = None
@@ -24,3 +24,4 @@ class Commonbase:
             print(e)
 
         return df
+
